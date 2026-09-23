@@ -3,6 +3,8 @@
 An intelligent, interactive study assistant web application built with **Next.js**, **React**, **TypeScript**, and **Tailwind CSS**. Elisa is designed to help students learn across various subjects with a modern chat interface, speech recognition, and text-to-speech voice controls.
 
 ---
+@Live demo 🚀
+https://tts-studybot-git-main-subashvelmurugan1408s-projects.vercel.app/
 
 ## ✨ Features
 
