@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f7f7f8;
+  --panel: #ffffff;
+  --border: #e5e5e7;
+  --text: #1f1f23;
+  --text-soft: #52525b;
+  --accent: #6366f1;
+  --accent-soft: #eef2ff;
+}
+
+html,
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Scrollbar for chat window */
+.chat-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+.chat-scroll::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 9999px;
+}
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Waveform animation for speaking indicator */
+@keyframes bar-grow {
+  0%,
+  100% {
+    height: 6px;
+  }
+  50% {
+    height: 18px;
+  }
+}
+
+.waveform-bar {
+  animation: bar-grow 1.1s ease-in-out infinite;
+}
+.waveform-bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.waveform-bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.waveform-bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* Smooth scroll to bottom */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Custom range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 9999px;
+  background: #e5e7eb;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #6366f1;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #6366f1;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
